@@ -9,4 +9,4 @@ spec:
     - name: jenkins
       image: jenkins/jenkins:lts
   nodeSelector:
-    node: my_worker1
+    name: my_worker1    #label of the node where i want to deploy the pod

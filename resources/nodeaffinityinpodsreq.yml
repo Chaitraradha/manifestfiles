@@ -13,7 +13,7 @@ spec:
       requiredDuringSchedulingIgnoredDuringExecution:
         nodeSelectorTerms:
           - matchExpressions:
-            - key: "node"
-              operator: NotIn
+            - key: "node"   #label name key
+              operator: NotIn  
               values:
-                - my_worker2
+                - my_worker2  #label value

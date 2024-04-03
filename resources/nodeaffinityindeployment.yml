@@ -18,9 +18,9 @@ spec:
     metadata:
       labels:
         app: jenkins
-    spec:
+    spec:     #template of spec
       containers:
         - name: jenkins
           image: jenkins/jenkins:2.303.1
-      nodeSelector:
+      nodeSelector:    
         node: my_worker1
